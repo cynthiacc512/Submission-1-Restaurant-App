@@ -12,10 +12,10 @@ class DetailRestaurant extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
+          height: MediaQuery.of(context).size.height,
           child: Stack(
             children: <Widget>[
               Container(
-                height: 5000,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: NetworkImage(restaurant.pictureId),
